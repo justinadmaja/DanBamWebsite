@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <link rel="stylesheet" type="text/css" href="cssfile-contact.css" media="screen" />
+    <script src="validation.js"></script>
+    
+    <title>Project</title>
+</head>
+
+    <body>
+        <div id="header">
+            <img class="header-background" src="assets/HeaderBackground.png">
+            <div class="header-content">
+                <div class="header-image">
+                    <a href="index.html"><img src="assets/WebsiteLogoAnimation.gif"></a>
+                </div>
+                <div id="navigation">
+                    <div class="dropdown">
+                        <button class="home">Contact Us</button>
+                        <div class="dropdown-content">
+                            <a href="index.html">Home</a>
+                            <a href="foodmenu.html">Menu</a>
+                            <a href="about.html">About Us</a>
+                            <a href="location.html">Location</a>
+                            <a href="contactus.html">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="body">
+            <div class="container">
+                <div class="form-container">
+                    <form name="contactForm" action="" method="post" onSubmit=" return formValidation()">
+                        <div class="user-details">
+                            <div class="input-box">
+                                <label class="details">Full Name</label>
+                                <input type="text" name="Name" placeholder="Enter your name" />
+                            </div>
+                            <div class="input-box">
+                                <label class="details">Email</label>
+                                <input type="text" name="Email" placeholder="Enter your email" />
+                            </div>
+                            <div class="input-box">
+                                <label class="details">Branch Location</label>
+                                <select name="Location" id="location">
+                                    <option disabled selected> -- select a branch -- </option>
+                                    <optgroup label="Seoul">
+                                        <option value="seoul1">DanBam Seoul I</option>
+                                        <option value="seoul2">DanBam Seoul II</option>
+                                        <option value="seoul3">DanBam Seoul III</option>
+                                        <option value="seoul4">DanBam Seoul IV</option>
+                                    </optgroup>
+                                    <optgroup label="Busan">
+                                        <option value="busan">DanBam Busan</option>
+                                    </optgroup>
+                                    <optgroup label="Daegu">
+                                        <option value="daegu">DanBam Daegu</option>
+                                    </optgroup>
+                                    <optgroup label="Gwangju">
+                                        <option value="gwangju">DanBam Gwangju</option>
+                                    </optgroup>
+                                    <optgroup label="International">
+                                        <option value="japan">DanBam Japan</option>
+                                        <option value="taiwan">DanBam Taiwan</option>
+                                    </optgroup>
+                                </select>
+
+                            </div>
+                            <div class="input-box">
+                                <label class="details">Phone Number</label>
+                                <input name="Phone" type="text" placeholder="Enter your number" />
+                            </div>
+                            <div class="input-box">
+                                <label for="message" class="details">Message</label>
+                                <textarea name="Message" rows="6" placeholder="Enter your message"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="gender-details">
+                            <input type="radio" name="gender" id="dot-1" />
+                            <input type="radio" name="gender" id="dot-2" />
+                            <input type="radio" name="gender" id="dot-3" />
+                            <label class="gender-title">Gender</label>
+                            <div class="category">
+                                <label for="dot-1">
+                                    <span class="dot one"></span>
+                                    <span class="gender">Male</span>
+                                </label>
+                                <label for="dot-2">
+                                    <span class="dot two"></span>
+                                    <span class="gender">Female</span>
+                                </label>
+                                <label for="dot-3">
+                                    <span class="dot three"></span>
+                                    <span class="gender">Prefer not to say</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="agreement">
+                            <input type="checkbox" name="agreement">
+                            <label for="agreement">Agree to receive the latest information</label>
+                        </div>
+                            
+                        <div id="validationinfo" class="validation-info">
+
+                        </div>
+
+                        <div class="button">
+                            <input type="submit" name="submit" value="Send" />
+                        </div>
+
+                    </form>
+                </div>
+                
+
+            </div>
+
+        </div>
+
+        <div id="contact" class="footer">
+            <img class="footer-background" src="assets/FooterBackground.png">
+            
+            <div class="footer-content">
+                <div class="footer-images">
+                    <a href="https://www.youtube.com/">
+                        <img src="assets/youtube.png" />
+                    </a>
+                    <a  href="https://facebook.com/">
+                        <img src="assets/instagram.png" />
+                    </a>
+                    <a href="https://www.instagram.com/">
+                    <img src="assets/facebook.png" />
+                    </a>    
+                </div>
+                
+            </div>
+        </div>
+</body>
+</html>

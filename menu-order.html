@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <link rel="stylesheet" type="text/css" href="cssfile-contact.css" media="screen" />
+    
+    
+    <title>Project</title>
+</head>
+
+    <body>
+        <div id="header">
+            <img class="header-background" src="assets/HeaderBackground.png">
+            <div class="header-content">
+                <div class="header-image">
+                    <a href="index.html"><img src="assets/WebsiteLogoAnimation.gif"></a>
+                </div>
+                <div id="navigation">
+                    <div class="dropdown">
+                        <button class="home"  onclick="document.location='foodmenu.html'">Return to Menu</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="body">
+            <div class="container">
+                <div class="form-container">
+                    <form name="contactForm" action="" method="post" onSubmit=" return formValidation()">
+                        <div class="user-details">
+                            <div class="input-box">
+                                <label class="details">Name</label>
+                                <input type="text" name="Name" placeholder="Enter your name" />
+                            </div>
+                            <div class="input-box">
+                                <label class="details">Address</label>
+                                <input type="text" name="Email" placeholder="Enter your home address" />
+                            </div>
+                            <div class="input-box">
+                                <label class="details">Branch Location</label>
+                                <select name="Location" id="location">
+                                    <option disabled selected>Please pick the closest branch</option>
+                                    <optgroup label="Seoul">
+                                        <option value="seoul1">DanBam Seoul I</option>
+                                        <option value="seoul2">DanBam Seoul II</option>
+                                        <option value="seoul3">DanBam Seoul III</option>
+                                        <option value="seoul4">DanBam Seoul IV</option>
+                                    </optgroup>
+                                    <optgroup label="Busan">
+                                        <option value="busan">DanBam Busan</option>
+                                    </optgroup>
+                                    <optgroup label="Daegu">
+                                        <option value="daegu">DanBam Daegu</option>
+                                    </optgroup>
+                                    <optgroup label="Gwangju">
+                                        <option value="gwangju">DanBam Gwangju</option>
+                                    </optgroup>
+                                    <optgroup label="International">
+                                        <option value="japan">DanBam Japan</option>
+                                        <option value="taiwan">DanBam Taiwan</option>
+                                    </optgroup>
+                                </select>
+
+                            </div>
+                            <div class="input-box">
+                                <label class="details">Phone Number</label>
+                                <input name="Phone" type="text" placeholder="Enter your phone number" />
+                            </div>
+                            <div class="input-box">
+                                <label for="message" class="details">Menu Order</label>
+                                <textarea name="Message" rows="24" placeholder="Menu Name | Quantity"></textarea>
+                            </div>
+                        </div>
+                            
+                        <div id="validationinfo" class="validation-info">
+
+                        </div>
+
+                        <div class="button" onclick="clickfunc()">
+                            <input type="submit" name="submit" value="Order" />
+                        </div>
+
+                    </form>
+                </div>
+                
+
+            </div>
+
+        </div>
+
+        <div id="contact" class="footer">
+            <img class="footer-background" src="assets/FooterBackground.png">
+            
+            <div class="footer-content">
+                <div class="footer-images">
+                    <a href="https://www.youtube.com/">
+                        <img src="assets/youtube.png" />
+                    </a>
+                    <a  href="https://facebook.com/">
+                        <img src="assets/instagram.png" />
+                    </a>
+                    <a href="https://www.instagram.com/">
+                    <img src="assets/facebook.png" />
+                    </a>    
+                </div>
+                
+            </div>
+        </div>
+        <script src="menu.js"></script>
+</body>
+</html>
